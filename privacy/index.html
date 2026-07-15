@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Page to JSON</title>
+<meta name="description" content="Privacy policy for the Page to JSON browser extension. Page content is processed on your device and never transmitted, retained, or sold.">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a; background: #fff;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .6rem; }
+  p, li { margin: .55rem 0; }
+  ul { padding-left: 1.3rem; }
+  a { color: #8a6d00; }
+  code { font: 0.92em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(127,127,127,.14); padding: .1em .35em; border-radius: 4px; }
+  .muted { color: #666; font-size: .92rem; }
+  .lead { font-size: 1.05rem; }
+  .box { border: 1px solid rgba(127,127,127,.35); border-radius: 8px; padding: 1rem 1.15rem; margin: 1.25rem 0; }
+  .nav { margin-top: 2.5rem; font-size: .92rem; }
+  .back { display: inline-block; margin-bottom: 1.75rem; padding: .35rem .8rem; border: 1px solid rgba(127,127,127,.4); border-radius: 8px; text-decoration: none; color: inherit; font-size: .9rem; }
+  .back:hover { border-color: #8a6d00; }
+  hr { border: none; border-top: 1px solid rgba(127,127,127,.3); margin: 2.5rem 0 1.25rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #16181c; }
+    a { color: #f7df1e; }
+    .muted { color: #9aa0a6; }
+    .back:hover { border-color: #f7df1e; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p><a class="back" href="../">← Back to home</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Page to JSON browser extension</p>
+
+  <p class="lead"><strong>Page to JSON processes the data of the page you are viewing entirely on your own device.
+  It never transmits, sells, or retains that data, and the developer never sees it.</strong></p>
+
+  <h2>What the extension accesses</h2>
+  <p>When you open the extension's popup, it inspects the current tab only to identify its type (so it can label
+  the Export button). It reads the tab's full content <strong>only when you click Export</strong>. That content is
+  whatever the page contains — for example issue, pull request, or change-request fields, which may include names,
+  usernames, email addresses, and other user-generated text.</p>
+  <p>The extension acts only on the tab you are actively viewing, only while the popup is open, and only after you
+  have clicked. It does not run in the background and does not observe or collect your browsing history or activity
+  across sites.</p>
+
+  <h2>On-device processing only</h2>
+  <p>Extraction runs locally in your browser. The resulting JSON is written only to a <strong>file you download</strong>
+  and, if you enable it in Settings, <strong>your clipboard</strong>. Nothing is sent to the developer, to Google, to
+  any AI/LLM service, or to any other third party.</p>
+
+  <h2>Same-origin reads</h2>
+  <p>To assemble a complete export, the extension may fetch additional data from the <strong>active tab's own website</strong>
+  (for example a pull request's <code>.diff</code>, or Jira REST data) over your existing signed-in session. These are reads of
+  content you can already see, returned as data and processed locally. They are never sent to the developer or anyone else,
+  and the extension never reads or stores your authentication cookies.</p>
+
+  <h2>What is stored</h2>
+  <p>The extension uses the browser's extension storage to keep only: your one-time consent acknowledgement and your output
+  preferences (clipboard on/off, download on/off, pretty-print). <strong>No page content is ever stored.</strong></p>
+
+  <h2>What the extension does not do</h2>
+  <ul>
+    <li>No transmission of page data anywhere.</li>
+    <li>No retention — extracted content exists only transiently in memory and in the file/clipboard you control.</li>
+    <li>No tracking, analytics, or browsing-activity collection.</li>
+    <li>No advertising, no sale or transfer of data, no use of data by the developer.</li>
+    <li>No financial data, health data, passwords, or authentication cookies are read or stored.</li>
+  </ul>
+
+  <h2>Report an issue &amp; Feedback (GitHub Issues)</h2>
+  <p>The popup's optional "Report an issue" and "Feedback" links open the project's
+  <a href="https://github.com/GoldenMaximo/page-to-json-site/issues" target="_blank" rel="noopener">public GitHub issue tracker</a>.
+  If you choose to file one, your submission is posted publicly on GitHub and is handled under
+  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's Privacy Statement</a>.
+  An issue contains <strong>only what you choose to write</strong>; the extension <strong>never automatically attaches page content or any
+  extracted data</strong>. Because issues are public, please do not include private or sensitive information. Filing an issue is entirely
+  optional and never required to use the extension.</p>
+
+  <h2>Donations</h2>
+  <p>The popup includes an optional "Buy me a coffee" link to a third-party donation service
+  (<a href="https://buymeacoffee.com/gustavomaximofilho" target="_blank" rel="noopener">Buy Me a Coffee</a>). Donations are voluntary
+  and never required. The developer is not the seller and collects no payment information; any payment data is handled by that
+  third-party service under its own policy.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><code>activeTab</code> — read the current tab only when you click, and make the same-origin reads described above.</li>
+    <li><code>scripting</code> — inject the extractor into the page on your click (no persistent scripts; nothing runs on page load).</li>
+    <li><code>storage</code> — persist the consent acknowledgement and your output preferences. No page content.</li>
+  </ul>
+
+  <div class="box">
+    <p style="margin:0"><strong>Limited Use.</strong> Page to JSON's use of data handled by the extension adheres to the
+    Chrome Web Store User Data Policy, including the Limited Use requirements. Page content is processed locally on your device to
+    produce a JSON export, is never transmitted or sold, is not used for advertising, and is never read by us.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:gfmaximo97@gmail.com">gfmaximo97@gmail.com</a>, or via the
+  <a href="https://buymeacoffee.com/gustavomaximofilho" target="_blank" rel="noopener">Buy Me a Coffee</a> page.</p>
+
+  <hr>
+  <p class="muted">Not affiliated with, endorsed by, or sponsored by Atlassian, GitHub, ServiceNow, or Qwiet AI.
+  Product names are used only to describe supported pages.</p>
+  <p class="muted">© 2026 Gustavo Máximo Filho. All rights reserved.</p>
+  <p class="muted">Created by <a href="https://github.com/GoldenMaximo" target="_blank" rel="noopener">Gustavo Máximo Filho</a>.</p>
+  <p class="muted">Updated: July 15, 2026.</p>
+  <p class="nav"><a href="../">Home</a> · <a href="../terms/">Terms of Use</a></p>
+</main>
+</body>
+</html>
