@@ -1,7 +1,9 @@
-# Page to JSON — policy site
+# Page to JSON
 
 Public policy pages for the **Page to JSON** browser extension: the hosted Privacy Policy
 and Terms of Use required for the Chrome Web Store listing.
+
+This repo also serves as a way to report issues and provide feedback through the [issues](https://github.com/GoldenMaximo/page-to-json-site/issues) tab.
 
 ## Pages
 - `index.html` — landing, links to both docs
